@@ -62,6 +62,4 @@ contract Implementation is Upgradeable{
     ) public onlyOwner {
         _delegatecall(AirdropHandler);
     }
-
-
 }

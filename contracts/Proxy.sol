@@ -5,9 +5,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Proxy is Ownable{
     bytes32 private constant implementationPosition =
-        keccak256("implementation.contract:2023");
+        keccak256("implementation.contract.token-airdrop:2023");
     bytes32 private constant proxyOwnerPosition =
-        keccak256("owner.contract:2023");
+        keccak256("owner.contract.token-airdrop:2023");
 
     event Upgraded(address indexed implementation);
     event ProxyOwnershipTransferred(
